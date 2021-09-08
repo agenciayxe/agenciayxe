@@ -1,11 +1,7 @@
 <?php 
-
 require_once 'inc/load.php';
 
-
-
 /* Links */
-
 $argVar = array(
 
 	'maps' => 'https://goo.gl/maps/yt3PPqoemfgzFXVB9',
@@ -21,7 +17,5 @@ $argVar = array(
 	'contato' => 18,
 
 );
-
 InfoVar::save($argVar);
-
 ?>

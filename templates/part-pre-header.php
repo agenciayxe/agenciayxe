@@ -36,11 +36,6 @@
 						<i class="fas fa-shopping-cart"></i> Ofertas
 					</a>
 				</li>
-				<!-- <li id="nav-menu-item-6">
-					<a href="<?php echo get_page_link(InfoVar::show('fidelidade')); ?>" class="menu-link main-menu-link">
-						<i class="far fa-credit-card"></i> Fidelidade
-					</a>
-				</li> -->
 				<li id="nav-menu-item-6">
 					<a href="<?php echo get_page_link(InfoVar::show('sobre')); ?>" class="menu-link main-menu-link">
 						<i class="fas fa-info-circle"></i> Sobre a Rede

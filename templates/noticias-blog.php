@@ -12,9 +12,6 @@
 							if (has_post_thumbnail()) { ?><div class="img-default" style="background-image: url('<?php echo the_post_thumbnail_url('medium') ?>');"></div><?php } else { ?><div class="img-default"><h3><?php the_title(); ?></h3></div><?php }
 							?>
 							<div class="text">
-								<!-- <h3><?php echo get_the_date(); ?></h3> -->
-								<!-- <h2><?php the_title(); ?></h2> -->
-								<!-- <h3><?php echo get_the_excerpt(); ?></h3> -->
 								<span class="view-more">Ver Mais </span>
 							</div>
 						</div>

@@ -1,0 +1,338 @@
+.home-topo {	
+	.home-banner-bar {
+		position: relative;
+	    height: 100%;
+	    padding: 0px;
+	    background-color: $corBranco;
+	    z-index: 50;
+	    transition: all 0.3s ease;
+		ul {
+	    	// border: solid 1px #d6d6d6;
+			list-style-type: none;
+			padding-inline-start: 0px;
+			padding: 0px;
+	    	margin: 0px -15px;
+			li {
+				display: block;
+				&::before {
+					display: none;
+				}
+				a {
+					display: block;
+					font-size: 18px;
+					padding: 14px 10px;
+					// text-transform: uppercase;
+					transition: all 0.3s ease;
+					border-bottom: solid 1px $corPrincipalEscuraDark;
+					cursor: pointer;
+					border-bottom: solid 1px #d6d6d6;
+					line-height: normal !important;
+					font-family: 'Open Sans';
+					color: $corText;
+					font-weight: normal !important;
+					i {
+						color: $corPrincipal;
+					}
+				}
+				&:hover {
+					a {
+						background-color: $corPrincipal;
+						&, i {
+							color: $corBranco;
+						}
+					}
+				}
+				&.current_page_item {
+					a {
+						pointer-events: none;
+						background-color: $corPrincipalEscura;
+						&, i {
+							color: $corBranco;
+						}
+					}
+				}
+			}
+		}
+		&.active {
+			right: 0px;
+		}
+	}
+	.home-banner {
+		width: 100%;
+		max-height: 370px;
+		min-height: 230px;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		display: block;
+		position: relative;
+		.area-feature {
+			height: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			.row-feature {
+				height: 100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				color: $corBranco;
+				.box-feature {
+					h3 {
+						margin: 10px 0px;
+					}
+					.text-padded {
+						margin-left: 10px;
+						h4 {
+							background-color: $corBranco;
+							color: $corPrincipal;
+							display:inline;
+							white-space:pre-wrap;
+							line-height: 45px;
+							font-size: 19px;
+							padding: 5px;
+							padding-left: 0px;
+							box-shadow: -10px 0 0 $corBranco; /* box shadow is emulating padding liek a charme */
+							margin: 15px 0px 15px;
+							font-weight: normal;
+							transform: translate(20);
+						}
+					}
+					button {
+						display: block;
+						margin: 10px 0px;
+					}
+				}
+			}
+		}
+		& > img {
+			width: 100%;
+		}
+		.row {
+			height: 100%;
+			.swiper-content {
+				width: 100%;
+				height: 100%;
+				.swiper-wrapper {
+					height: 100%;
+					width: 100%;
+					.swiper-slide {
+						height: 100%;
+						width: 100%;
+						.banner-slide-single {
+							background-repeat: no-repeat;
+							background-size: cover;
+							background-position: center;
+							height: 100%;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		.list-socials {
+			position: absolute;
+			bottom: 5%;
+			width: 100%;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.single-socials {
+				a {
+					padding: 15px 12px;
+					font-size: 32px;
+					color: white;
+				}	
+			}
+		}	
+	}
+	&.page-header {
+		.home-banner {
+			min-height: 155px;
+			background-position: center center;
+		}
+	}
+}
+@media screen and (max-width: $xsWidth) {
+	.home-topo {
+		.home-banner-bar {
+			display: none;
+		}
+		.home-banner {
+			min-height: 530px;
+			& > img {
+				display: none;
+			}
+			.home-banner {
+				width: 100%;
+				max-height: 370px;
+				min-height: 230px;
+				overflow: hidden;
+				background-size: cover;
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				display: block;
+				position: relative;
+				.area-feature {
+					height: 100%;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					color: $corBranco;
+					.box-feature {
+						h3 {
+							margin: 10px 0px;
+						}
+						.text-padded {
+							margin-left: 10px;
+							h4 {
+								background-color: $corBranco;
+								color: $corPrincipal;
+								display:inline;
+								white-space:pre-wrap;
+								line-height : 45px;
+								font-size: 19px;
+								padding: 5px;
+								padding-left: 0px;
+								box-shadow: -10px 0 0 $corBranco; /* box shadow is emulating padding liek a charme */
+								margin: 15px 0px 15px;
+								font-weight: normal;
+								transform: translate(20);
+							}
+						}
+						button {
+							display: block;
+							margin: 10px 0px;
+						}
+					}
+			
+				}
+			}
+			.area-feature {
+				.row-feature {
+					.box-feature {
+						h3 {
+							font-size: 21px;
+						}
+						.text-padded {
+							h4 {
+								line-height : 37px;
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.home-topo {
+		.home-banner-bar {
+			display: none;
+		}
+		.home-banner {
+			min-height: 450px;
+			.area-feature {
+				.row-feature {
+					.box-feature {
+						h3 {
+							font-size: 21px;
+						}
+						.text-padded {
+							h4 {
+								line-height: 37px;
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+	.home-topo {	
+		.home-banner {
+			min-height: 460px;
+			.area-feature {
+				.row-feature {
+					.box-feature {
+						h3 {
+							font-size: 21px;
+						}
+						.text-padded {
+							h4 {
+								line-height : 33px;
+								font-size: 13px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.home-banner-bar {
+			ul {
+				li {
+					&::before {
+						padding: 10px;
+					}
+					a {
+						font-size: 15px;
+						padding: 8px 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	.home-topo {
+		.home-banner {
+			min-height: 590px;
+			.area-feature {
+				.box-feature {
+					h3 {
+						font-size: 19px;
+					}
+					.text-padded {
+						h4 {
+							line-height: 37px;
+							font-size: 16px;
+						} 
+					}
+				}
+			}
+		}
+		.home-banner-bar {
+			ul {
+				li {
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $xlWidth) {
+	.home-topo {
+		.home-banner {
+			min-height: 735px;
+			& > img {
+				display: none;
+			}
+		}
+		.home-banner-bar {
+			ul {
+				li {
+					a {
+						padding: 20px 10px;
+					}
+				}
+			}
+		}
+	}
+}

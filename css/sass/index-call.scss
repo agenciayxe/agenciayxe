@@ -1,0 +1,76 @@
+.home-call {
+	background-color: $corPrincipal;
+	border-top: solid 10px $corPrincipalSuave;
+	border-bottom: solid 10px $corPrincipalSuave;
+	color: $corBranco;
+	padding: 40px 0px;
+	.content-call {
+		h2.title {
+			font-size: 40px;
+			color: $corSecundaria;
+		}
+		.single-call {
+			h4 {
+				margin: 15px 0px;
+				font-size: 22px;
+				font-weight: normal;
+			}
+			h3 {
+				margin: 15px 0px;
+				font-size: 45px;
+			}
+		}
+	}	
+}
+@media screen and (max-width: $xsWidth) {
+	.home-call {
+		.content-call {
+			.single-call {
+				h4 {
+					font-size: 18px;
+					text-align: center;
+				}
+				h3 {
+					font-size: 26px;
+					text-align: center;
+				}
+			}
+		}	
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	.home-call {
+		.content-call {
+			.single-call {
+				h4 {
+					font-size: 25px;
+					text-align: center;
+				}
+				h3 {
+					font-size: 35px;
+					text-align: center;
+				}
+			}
+		}	
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+	.home-call {
+		.content-call {
+			.single-call {
+				h4 {
+					font-size: 23px;
+				}
+				h3 {
+					font-size: 35px;
+				}
+			}
+		}	
+	}
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	
+}
+@media screen and (min-width: $xlWidth) {
+	
+}

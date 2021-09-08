@@ -1,0 +1,57 @@
+/* Cores do Tema */
+// $corPrincipal: #ee2924;
+$corPrincipal: #1E9AC8;
+$corPrincipalEscura: #05506B;
+$corPrincipalEscuraDark: #05506B;
+$corPrincipalSuave: #D1F0FB;
+$corPrincipalSuaveEscura: #4CB9DF;
+$corSecundaria: #a0a0a0;
+$corSecundariaEscura: #dcdcdc;
+$corBranco: #ffffff;
+$corText: #292929;
+$corGrayPrincipal: #ededed;
+$corGraySuave: #F3F3F3;
+
+/* Tamanho das Telas */
+$xsWidth: 576px;
+$smWidth: 576px;
+$mdWidth: 768px;
+$lgWidth: 992px;
+$xlWidth: 1200px;
+
+/*Tamanho dos Textos */
+$xsTextMenu: 20px;
+
+@import 'classes';
+
+@import 'pre-header';
+@import 'header';
+@import 'header-bar';
+@import 'header-search';
+@import 'menu';
+@import 'icons';
+@import 'fonts';
+
+@import 'index';
+@import 'index-banner';
+@import 'index-communication';
+@import 'index-certification';
+@import 'index-news';
+@import 'index-services';
+@import 'index-call';
+@import 'index-tips';
+
+@import 'page-biography';
+@import 'page-contact';
+@import 'page-clients';
+@import 'page-news';
+@import 'page-offers';
+@import 'page-projects';
+@import 'page-services';
+@import 'page-market';
+@import 'page-stores';
+@import 'page-promotions';
+@import 'page-specials';
+
+@import 'pre-footer';
+@import 'footer';

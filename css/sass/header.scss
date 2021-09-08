@@ -1,0 +1,250 @@
+header {
+	position: absolute;
+	width: 100%;
+	min-height: 80px;
+	z-index: 100;
+	.header-area {
+
+		// background-color: $corPrincipal;
+		width: 100%;
+		&.fixed {
+			top: 0px;
+		}
+		.header-background {
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+			z-index: -1;
+			opacity: 0.7;
+			transition: all 0.3s ease;
+			&.down {
+				opacity: 1;
+			}
+			&.front-header {
+				opacity: 1;
+			}
+		}
+		.header-main {
+			z-index: 2;
+		}
+		.nav-button {
+			display: none;
+			float: right;
+			.disable {
+				display: none;
+			}
+			.hamburger {
+				padding: 30px 10px;
+			}
+		}
+		.logo {
+			position: absolute;
+			float: left;
+			img {
+				height: 60px;
+				margin: 8px 20px;
+			}
+			.list-socials {
+				text-align: center;
+				.single-socials {
+					display: inline-block;
+					padding: 2px 10px;
+					i {
+						font-size: 21px;
+						color: $corBranco;
+					}
+				}
+			}
+		}
+		nav {
+			float: right;
+			ul.header-menu {
+				display: flex;
+				margin: 0px !important;
+				li {
+					margin: 0px 5px;
+					padding: 20px 8px;
+					font-weight: 500;
+					font-size: 18px;
+					font-weight: 700;
+					a {
+						color: $corBranco;
+					}
+				}
+			}
+		}
+		.header-buttons {
+			clear: both; 
+			float: right;
+			.header-list-buttons {
+				.button-call {
+					font-size: 16px;
+					background-color: transparent;
+					border: solid 2px $corBranco;
+					padding: 5px 25px;
+				}
+			}
+		}
+	}
+	&.header-background {
+		position: relative;
+		min-height: 120px;
+		.header-area {
+			padding: 5px 0px;
+			position: fixed;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	}
+}
+section.content-title {
+	background-color: $corGrayPrincipal;
+    padding: 15px 0px;
+    margin: 0px 0px;
+    h1 {
+    	font-size: 40px;
+    	color: $corPrincipal;
+	    font-weight: 500;
+	    text-transform: uppercase;
+    }
+}
+@media screen and (max-width: $xsWidth) {
+	header {
+		.header-area {
+			.header-background {
+				opacity: 1;
+			}
+			.logo {
+				img {
+					height: 50px;
+					margin: 17px 8px;
+				}
+				.list-socials {
+					display: none;
+				}
+			}
+			.header-search {
+				display: none;
+			}
+			nav {
+				display: none;
+			}
+			.nav-button {
+				display: block;
+			}
+			.header-buttons {
+				display: none;
+			}
+			.home-banner {
+				.area-feature {
+					.box-feature {
+						h3 {
+							font-size: 23px;
+						}
+						.text-padded {
+							h4 {
+								font-size: 15px;
+								line-height: 35px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.header-background {
+			min-height: 100px;
+		}
+	}
+	section.content-title {
+	    h1 {
+	    	font-size: 23px;
+	    	text-align: center;
+	    }
+	}
+}
+@media screen and (min-width: $smWidth) and (max-width: $mdWidth) {
+	header { 
+		.header-area {
+			height: 100px;
+			.header-background {
+				opacity: 1;
+			}
+			nav {
+				display: none;
+			}
+			.nav-button {
+				display: block;
+			}
+			.header-search {
+				display: none;
+			}
+			.header-buttons {
+				display: none;
+			}
+			.logo {
+				.list-socials {
+					display: none;
+				}
+			}
+		}
+		&.header-background {
+			min-height: 100px;
+		}
+	}
+	section.content-title {
+	    h1 {
+	    	font-size: 32px;
+	    	text-align: center;
+	    }
+	}
+}
+@media screen and (min-width: $mdWidth) and (max-width: $lgWidth) {
+	header { 
+		height: 100px;
+		.header-area {
+			.nav-button {
+				.hamburger {
+					padding: 30px 2px;
+				}
+			}
+			.logo {
+				img {
+					padding: 7px 10px;
+				}
+			}
+			nav {
+				ul.header-menu {
+					li {
+						padding: 30px 10px;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	section.content-title {
+	    h1 {
+	    	font-size: 35px;
+	    }
+	}
+}
+@media screen and (min-width: $lgWidth) and (max-width: $xlWidth) {
+	header { 
+		.header-area {
+			nav {
+				ul.header-menu {
+					li {
+						padding: 30px 15px;
+						font-size: 19px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $xlWidth) {
+	
+}

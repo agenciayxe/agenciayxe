@@ -6,7 +6,7 @@ $argVar = array(
 
 	'maps' => 'https://goo.gl/maps/yt3PPqoemfgzFXVB9',
 	'email' => 'atendimento@yxe.com.br',
-	'facebook' => 'https://pt-br.facebook.com/AgenciaYxe/',
+	'facebook' => 'https://www.facebook.com/GroupYxe',
 	'instagram' => 'https://www.instagram.com/agenciayxe/',
 	'youtube' => 'https://www.youtube.com/user/YxePublicidade',
 	'phone' => 'tel:+552133252407',

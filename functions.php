@@ -13,8 +13,8 @@ $argVar = array(
 	
 	'home' => 12,
 	'quem-somos' => 14,
-	'trabalhe-conosco' => 16,
-	'contato' => 18,
+	'trabalhe-conosco' => 18,
+	'contato' => 16,
 
 );
 InfoVar::save($argVar);
